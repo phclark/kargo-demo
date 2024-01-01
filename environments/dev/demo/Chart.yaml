@@ -5,6 +5,6 @@ type: application
 version: 0.1.0
 appVersion: "1.0"
 dependencies:
-- name: application
-  version: 2.3.0
-  repository: https://stakater.github.io/stakater-charts
+- name: demo
+  version: 0.1.2
+  repository: onechart/onechart

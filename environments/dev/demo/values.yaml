@@ -1,25 +1,5 @@
-application:
-  applicationName: demo
-  namespaceOverride: dev
-  deployment:
-    image:
-      repository: nginx
-      tag: "1.25.0"
-
-  configMap:
-    enabled: true
-    files:
-      config: 
-        index.html: |-
-          <!DOCTYPE html>
-          <html>
-          <head>
-          <title>dev</title>
-          </head>
-          <body>
-
-          <h1>dev</h1>
-
-          </body>
-          </html>
-    
+demo:
+ 
+  image:
+    repository: nginx
+    tag: "0.19.3"

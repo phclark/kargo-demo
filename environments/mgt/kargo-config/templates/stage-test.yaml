@@ -1,0 +1,19 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: prod
+  namespace: kargo-demo
+spec:
+  subscriptions:
+    upstreamStages:
+    - name: dev
+  promotionMechanisms:
+    gitRepoUpdates:
+    - repoURL: https://github.com/phclark/kargo-demo
+      writeBranch: main
+      helm:
+        images:
+          - image: nginx
+            key: onechart.image.tag
+            value: Tag
+            path: environments/test/demo/values.yaml

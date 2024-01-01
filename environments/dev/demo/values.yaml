@@ -1,5 +1,5 @@
-demo:
- 
+onechart:
+
   image:
     repository: nginx
     tag: "0.19.3"

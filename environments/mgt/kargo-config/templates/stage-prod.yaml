@@ -16,4 +16,4 @@ spec:
           - image: nginx
             key: onechart.image.tag
             value: Tag
-            path: environments/prod/demo/values.yaml
+            valuesFilePath: environments/prod/demo/values.yaml

@@ -9,16 +9,17 @@ application:
   configMap:
     enabled: true
     files:
-      demo-index.html: |-
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>dev</title>
-        </head>
-        <body>
+      config: 
+        index.html: |-
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <title>dev</title>
+          </head>
+          <body>
 
-        <h1>dev</h1>
+          <h1>dev</h1>
 
-        </body>
-        </html>
+          </body>
+          </html>
     

@@ -1,25 +1,5 @@
-application:
-  applicationName: demo
-  namespaceOverride: prod
-  deployment:
-    image:
-      repository: nginx
-      tag: "1.25.0"
+onechart:
 
-  configMap:
-    enabled: true
-    files:
-      config: 
-        index.html: |-
-          <!DOCTYPE html>
-          <html>
-          <head>
-          <title>dev</title>
-          </head>
-          <body>
-
-          <h1>dev</h1>
-
-          </body>
-          </html>
-    
+  image:
+    repository: nginx
+    tag: "1.19.3"

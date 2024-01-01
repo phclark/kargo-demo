@@ -1,25 +1,5 @@
-application:
-  applicationName: demo
-  namespaceOverride: test
-  deployment:
-    image:
-      repository: hello-world
-      tag: "latest"
+onechart:
 
-  configMap:
-    enabled: true
-    files:
-      config: 
-        index.html: |-
-          <!DOCTYPE html>
-          <html>
-          <head>
-          <title>test</title>
-          </head>
-          <body>
-
-          <h1>test</h1>
-
-          </body>
-          </html>
-      
+  image:
+    repository: nginx
+    tag: "1.19.3"

@@ -3,8 +3,8 @@ application:
   namespaceOverride: test
   deployment:
     image:
-      repository: nginx
-      tag: "1.25.0"
+      repository: hello-world
+      tag: "latest"
 
   configMap:
     enabled: true

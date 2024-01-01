@@ -4,12 +4,13 @@ onechart:
     repository: nginx
     tag: "1.19.3"
 
-  vars:
-    index.html: |-
-      <!DOCTYPE html>
-      <html>
-      <body>
-      <h1>My First Heading</h1>
-      <p>My first paragraph.</p>
-      </body>
-      </html>
+  volumes:
+    - fileName: index.html
+      fileContent: |-
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+        </body>
+        </html>

@@ -7,4 +7,4 @@ appVersion: "1.0"
 dependencies:
 - name: onechart
   version: "0.63.0"
-  repository: "oci://ghcr.io/gimlet-io/onechart"
+  repository: "oci://ghcr.io/gimlet-io"

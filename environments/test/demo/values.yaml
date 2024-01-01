@@ -5,7 +5,10 @@ onechart:
     tag: "1.19.3"
 
   volumes:
-    - fileName: index.html
+    - name: index
+      fileName: index.html
+      hostPath:
+        path: /usr/share/nginx/html
       fileContent: |-
         <!DOCTYPE html>
         <html>

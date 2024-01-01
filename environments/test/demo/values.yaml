@@ -9,7 +9,7 @@ application:
   configMap:
     enabled: true
     files:
-      demo-index.html: |-
+      index: |-
         <!DOCTYPE html>
         <html>
         <head>

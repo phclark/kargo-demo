@@ -2,4 +2,4 @@ onechart:
 
   image:
     repository: nginx
-    tag: "0.19.3"
+    tag: "1.19.3"

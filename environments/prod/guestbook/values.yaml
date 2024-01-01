@@ -1,6 +1,6 @@
 guestbook:
   applicationName: guestbook
-  namespaceOverride: prod
+  namespaceOverride: dev
   deployment:
     image:
       repository: gcr.io/heptio-images/ks-guestbook-demo

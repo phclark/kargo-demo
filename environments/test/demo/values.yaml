@@ -7,7 +7,7 @@ onechart:
   volumes:
     - name: index
       fileName: index.html
-      path: /usr/share/nginx/html/index.html
+      path: /usr/share/nginx/html
       fileContent: |-
         <!DOCTYPE html>
         <html>

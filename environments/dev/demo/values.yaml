@@ -1,5 +1,5 @@
 application:
-  applicationName: guestbook
+  applicationName: demo
   namespaceOverride: dev
   deployment:
     image:
@@ -9,7 +9,7 @@ application:
   configMap:
     enabled: true
     files:
-      index.html: |-
+      demo-index.html: |-
         <!DOCTYPE html>
         <html>
         <head>

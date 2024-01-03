@@ -17,3 +17,7 @@ spec:
             key: onechart.image.tag
             value: Tag
             valuesFilePath: environments/prod/demo/values.yaml
+        charts:
+          - name: onechart
+            chartPath: environments/prod/demo/Chart.yaml
+            registryURL: oci://ghcr.io/gimlet-io

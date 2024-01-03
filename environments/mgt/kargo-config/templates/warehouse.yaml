@@ -10,5 +10,5 @@ spec:
       semverConstraint: "~1.20.0"
   - chart:
       name: onechart
-      registryURL: oci://ghcr.io/gimlet-io
+      registryURL: "oci://ghcr.io/gimlet-io"
       semverConstraint: "~0.62.0"

@@ -19,5 +19,5 @@ spec:
         charts:
           - name: onechart
             chartPath: environments/dev/demo/Chart.yaml
-            registryURL: oci://ghcr.io/gimlet-io
+            registryURL: "oci://ghcr.io/gimlet-io/onechart"
             

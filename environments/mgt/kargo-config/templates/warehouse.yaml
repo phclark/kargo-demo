@@ -7,4 +7,4 @@ spec:
   subscriptions:
   - image:
       repoURL: nginx
-      semverConstraint: "^1.19.0"
+      semverConstraint: "^ 1.19.0"

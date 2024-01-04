@@ -9,6 +9,6 @@ spec:
       repoURL: nginx
       semverConstraint: "~1.20.0"
   - chart:
-      name: onechart
-      registryURL: "oci://ghcr.io/gimlet-io/onechart"
+      name: gimlet-io/onechart
+      registryURL: "oci://ghcr.io/"
       # semverConstraint: "~0.62.0"

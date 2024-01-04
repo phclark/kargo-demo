@@ -18,6 +18,6 @@ spec:
             value: Tag
             valuesFilePath: environments/test/demo/values.yaml
         charts:
-          - name: onechart
+          - name: gimlet-io/onechart
             chartPath: environments/test/demo/Chart.yaml
-            registryURL: "oci://ghcr.io/gimlet-io/onechart"
+            registryURL: "oci://ghcr.io/"

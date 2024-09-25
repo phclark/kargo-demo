@@ -1,0 +1,22 @@
+onechart:
+
+  image:
+    repository: nginx
+    tag: "1.19.3"
+
+  volumes:
+    - name: index
+      fileName: index.html
+      path: /usr/share/nginx/html
+      fileContent: |-
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>prod</title>
+        </head>
+        <body>
+
+        <h1>prod</h1>
+
+        </body>
+        </html>

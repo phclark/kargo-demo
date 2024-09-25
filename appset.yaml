@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: kargo-demo
+  namespace: argocd
+spec:
+  goTemplate: true
+  generators:
+    - git:
+        directories:
+          - path: environments/*/*
+        repoURL: https://github.com/phclark/kargo-demo
+        revision: HEAD
+
+  template:
+    metadata:
+      name: '{{ index .path.segments 1 }}-{{ .path.basenameNormalized }}'
+    spec:
+      project: default
+      destination:
+        name: in-cluster
+        namespace: '{{ index .path.segments 1 }}'
+      source:
+        helm:
+          valueFiles:
+            - values.yaml
+        path: '{{ .path.path }}'
+        repoURL: https://github.com/phclark/kargo-demo
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
